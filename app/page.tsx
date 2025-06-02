@@ -1,17 +1,17 @@
-
-
-import Live from '@/components/Live'
-import React from 'react'
+import Live from "@/components/Live";
+import Navbar from "@/components/Navbar";
+import React from "react";
 
 const Page = () => {
   return (
-    <main>
+    <main className="h-screen overflow-hidden">
+      <Navbar />
 
-    
-
-      <Live />
+      <section className="flex h-full flex-row">
+        <Live />
+      </section>
     </main>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
